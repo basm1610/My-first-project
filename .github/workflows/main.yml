@@ -1,7 +1,7 @@
 on:
- push:
-  branches:
-   - master
+  push:
+    branches:
+      - master
 
 
 
@@ -9,14 +9,14 @@ on:
 
 
 jobs:
- build:
-  runs-on: ubuntu-lastest
+  build:
+    runs-on: ubuntu-lastest
   
-  steps:
-    - name: 'Before'
-      run: ls
+    steps:
+      - name: 'Before'
+        run: ls
     
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: 'after'
-      run: ls
+      - name: 'after'
+        run: ls
