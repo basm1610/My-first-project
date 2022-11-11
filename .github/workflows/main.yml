@@ -14,9 +14,9 @@ jobs:
   
     steps:
       - name: 'Before'
-        run: ls -a
+        run: ls
     
       - uses: actions/checkout@v3
 
-      - name: 'after'
-        run: ls
+      - name: 'login to docker hub'
+        run: docker login --username ${{ secrets.USERNAME_DOCKER }} --password ${{ secrets.TOKEN_DOCKER }}
