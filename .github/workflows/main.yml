@@ -14,7 +14,7 @@ jobs:
   
     steps:
       - name: 'Before'
-        run: ls
+        run: ls -a
     
       - uses: actions/checkout@v3
 
